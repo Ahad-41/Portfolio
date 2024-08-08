@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+:root {
+    --backgroundColor: #173B45;
+    --mainColor: #179BAE;
+    --hoverColor: #FF8343;
+    scroll-padding-top: 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light body {
+    transition: 0.5s;
+    background-color: #f5f5f5;
+    color: var(--backgroundColor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light .logo {
+    color: var(--backgroundColor);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light header.header-fixed {
+    transition: 0.5s;
+    background-color: #f5f5f550;
 }
 
-.App-link {
-  color: #61dafb;
+.light header.header-fixed a {
+    transition: 0.5s;
+    color: backgroundColor;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light header.header-fixed .menu,
+.light header.header-fixed .menu:before,
+.light header.header-fixed .menu:after {
+    background-color: var(--backgroundColor); 
+}
+
+.light header.header-fixed .menu.active {
+    background-color: rgba(555, 555, 555, 0);
+}
+
+.light footer.footer {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--backgroundColor);
+}
+
+.light form input,
+.light form textarea {
+    transition: 0.5s;
+    border: solid 1px var(--backgroundColor);
+    color: var(--backgroundColor);
+}
+
+.light form input::placeholder,
+.light form textarea::placeholder {
+    transition: 0.5s;
+    color: var(--backgroundColor);
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--backgroundColor);
+    color: #FFFF;
+}
+
+body, input, textarea, button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, .button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--mainColor);
+    color: #FFFF;
+    border-radius: 2rem;
+    font-weight: 500;
+    transition: filter 0.25s;
+}
+
+button:hover, .button:hover {
+    filter: brightness(0.8);
+}
+
+button:disabled, .button:disabled {
+    filter: brightness(0.8);
+    cursor: not-allowed;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #FFFF;
 }

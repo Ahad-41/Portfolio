@@ -1,0 +1,106 @@
+#skills {
+  margin-top: 12rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#skills .hard-skills {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  border: 1px solid var(--hoverColor);
+  background-color: #245462;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#skills .hability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills .hability img {
+  width: 3.4rem;
+}
+
+#skills h2 {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  margin-top: 0rem;
+}
+
+#skills h3 {
+  margin-top: 2rem;
+  color: var(--hoverColor);
+}
+
+#skills p {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+#skills .about-image {
+  text-align: left;
+}
+
+#skills .about-image img {
+  margin-top: 2rem;
+  width: 75%;
+  filter: grayscale(0);
+  transition: filter 0.5s;
+}
+
+#skills .about-image img:hover {
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width: 480px) {
+  #skills .about-image {
+    max-width: 100%;
+    margin-top: 4rem;
+  }
+
+  #skills .about-image img {
+    margin-top: 2rem;
+    width: 100%;
+    filter: grayscale(0);
+    transition: filter 0.5s;
+  }
+
+  #skills .about-image img:hover {
+    filter: grayscale(0);
+  }
+}
+
+@media (max-width: 960px) {
+  #skills {
+    display: block;
+    text-align: center;
+  }
+
+  #skills .hard-skills {
+    justify-content: center;
+  }
+
+  #skills .about-image {
+    display: flex;
+    max-width: 100%;
+  }
+
+  #skills .about-image img {
+    margin-top: 2rem;
+    width: 100%;
+    filter: grayscale(0);
+    transition: filter 0.5s;
+  }
+
+  #skills .about-image img:hover {
+    filter: grayscale(0);
+  }
+}
