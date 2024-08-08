@@ -34,7 +34,7 @@ const lists = [
     id: 'projects'
   },
   {
-    title: 'Contact Me',
+    title: 'Contact',
     id: 'contact'
   }
 ];
