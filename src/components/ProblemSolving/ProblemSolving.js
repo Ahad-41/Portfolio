@@ -23,7 +23,7 @@ const lists = [
   },
   {
     handle: 'Link',
-    rating: '2500+ Problems Solved',
+    rating: '3000+ Problems Solved',
     extra: 'Competitive Programming Problems (Algorithmic, Data Structure Based and Others)',
     idLink:'https://github.com/Ahad-41/Competitive-Programming',
     image: { src: CP, alt: 'CP' }

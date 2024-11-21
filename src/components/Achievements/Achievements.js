@@ -5,6 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import BUET_IUPC_2023 from './assets/BUET IUPC 2023.jpg';
 import CUET_IUPC_2024 from './assets/CUET IUPC 2024.jpg';
 import NCPC_2023 from './assets/NCPC 2023.jpg';
+import BUET_IUPC_2024 from './assets/BUET IUPC 2024.jpg';
 
 const lists = [
   {
@@ -25,11 +26,19 @@ const lists = [
   },
   {
     name: 'National Collegiate Programming Contest NCPC 2023',
-    date: 'March 9, 2024',
+    date: 'March 09, 2024',
     team: 'Target Ad-hoc',
     rank: 'Rank : 96/196',
     standing:'https://bapsoj.org/contests/ncpc-onsite-2023-hosted-by-ju/standings',
     image: { src: NCPC_2023, alt: 'NCPC 2023' }
+  },
+  {
+    name: 'BUET Inter University Programming Contest 2024',
+    date: 'November 01, 2024',
+    team: 'BU_Phantoms',
+    rank: 'Rank : 106/113',
+    standing:'https://toph.co/c/inter-university-buet-cse-fest-2024/standings',
+    image: { src: BUET_IUPC_2024, alt: 'BUET IUPC 2024' }
   }
 ];
 

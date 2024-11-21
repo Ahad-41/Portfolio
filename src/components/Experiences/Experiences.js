@@ -8,10 +8,21 @@ const lists = [
   {
     topic: 'Problem Setter',
     contest: 'Intra Department Programming Contest 2023, CSE-BU',
-    date: 'November 2021',
     link:'https://codeforces.com/contestInvitation/fa4a356e37997cfb8dfe717ba3106ad11eb693eb',
     image: { src: Codeforces, alt: 'Codeforces' }
   },
+  {
+    topic: 'Problem Setter',
+    contest: 'Intra Department Programming Contest 2024, CSE-BU',
+    link:'https://codeforces.com/contestInvitation/f17a2379be0d143d570d6725209a6b0c36647df9',
+    image: { src: Codeforces, alt: 'Codeforces' }
+  },
+  {
+    topic: 'Problem Setter',
+    contest: 'Battle of Brains 2024, University of Barishal',
+    link:'https://codeforces.com/contestInvitation/898ff3910e89d79abb797a8e2a7f214bba05a565',
+    image: { src: Codeforces, alt: 'Codeforces' }
+  }
 ];
 
 const Experiences = () => {
